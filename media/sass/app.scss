@@ -89,6 +89,18 @@ div.h-b-2{
 	.bx-wrapper{
 		@include box-shadow(none);
 		border:0px;
+		margin-bottom:0px;
+		.bx-default-pager{
+			position:relative;
+			top:-35px;
+			margin-top:0px;
+			padding:0px;
+			.bx-pager-link{
+				width:20px;
+				height:20px;
+				@include border-radius(10px);
+			}
+		}
 	}
 }
 

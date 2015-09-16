@@ -109,4 +109,20 @@ div.h-b-2 div.rt ul.menus li a {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 0px;
+  margin-bottom: 0px;
+}
+/* line 93, ../sass/app.scss */
+.h-b-3 .bx-wrapper .bx-default-pager {
+  position: relative;
+  top: -35px;
+  margin-top: 0px;
+  padding: 0px;
+}
+/* line 98, ../sass/app.scss */
+.h-b-3 .bx-wrapper .bx-default-pager .bx-pager-link {
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
