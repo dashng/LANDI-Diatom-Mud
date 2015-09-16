@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@CHARSET "UTF-8";
+/* line 3, ../sass/app.scss */
+html, body {
+  font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"瀹嬩綋";
+  min-width: 1200px;
+}
+
+/* line 7, ../sass/app.scss */
+body, label, input, td, div, select, a {
+  font-size: 12px;
+}
+
+/* line 10, ../sass/app.scss */
+div.container-ld {
+  width: 1200px;
+}
+
+/* line 14, ../sass/app.scss */
+div.container, div.row {
+  width: 1170px;
+}
+
+/* line 18, ../sass/app.scss */
+div.h-b-1 {
+  min-width: 1200px;
+  height: 33px;
+  line-height: 33px;
+  background: #e3e3e3;
+  color: #1f77a3;
+}
+/* line 24, ../sass/app.scss */
+div.h-b-1 label.lf, div.h-b-1 label.rt {
+  font-size: 1.2em;
+  letter-spacing: 0.01em;
+}
+/* line 28, ../sass/app.scss */
+div.h-b-1 label.lf {
+  color: #1f77a3;
+  float: left;
+}
+/* line 33, ../sass/app.scss */
+div.h-b-1 label.rt {
+  color: #f4b55b;
+  float: right;
+}
+
+/* line 39, ../sass/app.scss */
+div.h-b-2 {
+  min-width: 1200px;
+  height: 157px;
+  line-height: 33px;
+  background: #fff;
+  color: #1f77a3;
+}
+/* line 45, ../sass/app.scss */
+div.h-b-2 div.lf {
+  width: 300px;
+  float: left;
+  background: url(../images/logo.png) center center no-repeat;
+  height: 157px;
+}
+/* line 51, ../sass/app.scss */
+div.h-b-2 div.rt {
+  width: 800px;
+  float: right;
+  margin-right: -2px;
+  height: 157px;
+  text-align: center;
+  position: relative;
+}
+/* line 58, ../sass/app.scss */
+div.h-b-2 div.rt ul.menus {
+  padding: 0;
+  margin-top: 35px;
+}
+/* line 62, ../sass/app.scss */
+div.h-b-2 div.rt ul.menus li {
+  background: rgba(255, 255, 255, 0);
+  width: 8em;
+  margin: 0.5em;
+  height: 5em;
+  text-align: center;
+  vertical-align: text-top;
+  display: inline-block;
+  /* non-flexbox browsers */
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 77, ../sass/app.scss */
+div.h-b-2 div.rt ul.menus li a {
+  font-size: 1.3em;
+  color: #5699bc;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* line 87, ../sass/app.scss */
+.h-b-3 {
+  height: 439px;
+}
+/* line 89, ../sass/app.scss */
+.h-b-3 .bx-wrapper {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0px;
+}

@@ -1,0 +1,9 @@
+*.pyc
+*.xml
+*.project
+*.pydevproject
+*.log
+.idea/
+.settings/
+/conf/conf_local.py
+*.scssc
