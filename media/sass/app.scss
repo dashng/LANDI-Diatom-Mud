@@ -165,7 +165,7 @@ div.h-b-2{
 
 
 div.card_pane{
-	height:372px;
+	min-height:372px;
 	width:100%;
 	border:1px solid #d8d8d8;
 	margin:21px 0px;
@@ -254,6 +254,7 @@ div.card_pane{
 				display:block;
 				overflow:hidden;
 				width:100%;
+				margin:0px auto;
 				height:50%;
 				&:hover{
 					@include box-shadow(none);	
@@ -324,10 +325,7 @@ div.card_pane{
 				}
 				&:hover{
 					&:before{
-						content: "\f064";
-						font-size:0.9em;
 						color:#fc9907;
-						
 					}
 				}
 			}
@@ -335,6 +333,55 @@ div.card_pane{
 				border-bottom:none;
 			}
 		}
+		
+		> ul.case-sample{
+			height:490px;
+			li{
+				width:5.1em;
+				height:7em;;
+			}
+		}
+	}
+}
+
+div.case_pane{
+	height:490px;
+	div.card_content{	
+		> ul.case-sample{
+			padding:0.09em 0.02em;
+			li{
+				@extend .animation;
+			    text-align: center;
+			    vertical-align: text-top;
+			    display: inline-block; /* non-flexbox browsers */
+			    @include display-flex(inline-flex);
+			    @include align-items(center);
+			    @include justify-content(center);
+			    a{
+			    	padding:0px;
+			    	margin:0px;
+			    	overflow:hidden;
+			    	display:block;
+			    	background:#ddd;
+			    }
+			    width: 18.12em;
+			    height:17em;
+			    margin: 0.2em;
+			    overflow:hidden;
+			    &:hover{
+						@include transform(rotateY(180deg)); //No 3D fallback
+      					@include transform3d(perspective(300) rotateY(180deg)); 
+			    }
+			}	
+		}
+	}
+}
+
+div.footer{
+	@extend .h-b-1;
+	height:500px;
+	.container{
+		
 	}
 }
 

@@ -45,7 +45,7 @@ div.container, div.row {
 }
 
 /* line 42, ../sass/app.scss */
-.animation, .common-link, div.h-b-2 div.rt ul.menus li a, div.card_pane > .card_pane_title > a, div.card_pane div.card_content > ul.brief-news > li > a, .common-link:hover *, div.h-b-2 div.rt ul.menus li a:hover *, div.card_pane > .card_pane_title > a:hover *, div.card_pane div.card_content > ul.brief-news > li > a:hover *, div.card_pane div.card_content > ul.products-sample li, div.card_pane div.card_content > ul.join-us li, div.card_pane div.card_content > ul.join-us li > a.btn-ld {
+.animation, .common-link, div.h-b-2 div.rt ul.menus li a, div.card_pane > .card_pane_title > a, div.card_pane div.card_content > ul.brief-news > li > a, .common-link:hover *, div.h-b-2 div.rt ul.menus li a:hover *, div.card_pane > .card_pane_title > a:hover *, div.card_pane div.card_content > ul.brief-news > li > a:hover *, div.card_pane div.card_content > ul.products-sample li, div.card_pane div.card_content > ul.join-us li, div.card_pane div.card_content > ul.join-us li > a.btn-ld, div.case_pane div.card_content > ul.case-sample li {
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -89,7 +89,7 @@ div.container, div.row {
 }
 
 /* line 69, ../sass/app.scss */
-div.h-b-1 {
+div.h-b-1, div.footer {
   min-width: 1200px;
   height: 33px;
   line-height: 33px;
@@ -97,17 +97,17 @@ div.h-b-1 {
   color: #1f77a3;
 }
 /* line 75, ../sass/app.scss */
-div.h-b-1 label.lf, div.h-b-1 label.rt {
+div.h-b-1 label.lf, div.footer label.lf, div.h-b-1 label.rt, div.footer label.rt {
   font-size: 1.2em;
   letter-spacing: 0.01em;
 }
 /* line 79, ../sass/app.scss */
-div.h-b-1 label.lf {
+div.h-b-1 label.lf, div.footer label.lf {
   color: #1f77a3;
   float: left;
 }
 /* line 84, ../sass/app.scss */
-div.h-b-1 label.rt {
+div.h-b-1 label.rt, div.footer label.rt {
   color: #f4b55b;
   float: right;
 }
@@ -206,7 +206,7 @@ div.h-b-2 div.rt ul.menus li a:hover {
 
 /* line 167, ../sass/app.scss */
 div.card_pane {
-  height: 372px;
+  min-height: 372px;
   width: 100%;
   border: 1px solid #d8d8d8;
   margin: 21px 0px;
@@ -311,9 +311,10 @@ div.card_pane div.card_content > ul.join-us li {
   display: block;
   overflow: hidden;
   width: 100%;
+  margin: 0px auto;
   height: 50%;
 }
-/* line 258, ../sass/app.scss */
+/* line 259, ../sass/app.scss */
 div.card_pane div.card_content > ul.join-us li:hover {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -323,7 +324,7 @@ div.card_pane div.card_content > ul.join-us li:hover {
   -webkit-transform: none;
   transform: none;
 }
-/* line 262, ../sass/app.scss */
+/* line 263, ../sass/app.scss */
 div.card_pane div.card_content > ul.join-us li > a.btn-ld {
   background: #f6a000;
   width: 100%;
@@ -334,15 +335,15 @@ div.card_pane div.card_content > ul.join-us li > a.btn-ld {
   font-size: 1.6em;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7), 0 -1px 0 rgba(64, 38, 5, 0.9);
 }
-/* line 273, ../sass/app.scss */
+/* line 274, ../sass/app.scss */
 div.card_pane div.card_content > ul.join-us li > a.btn-ld:focus {
   background: #f8b838;
 }
-/* line 276, ../sass/app.scss */
+/* line 277, ../sass/app.scss */
 div.card_pane div.card_content > ul.join-us li > a.btn-ld:hover {
   background: #ffd842;
 }
-/* line 283, ../sass/app.scss */
+/* line 284, ../sass/app.scss */
 div.card_pane div.card_content > ul.brief-news {
   padding: 15px 5px;
   list-style-type: none;
@@ -350,7 +351,7 @@ div.card_pane div.card_content > ul.brief-news {
   overflow: hidden;
   max-height: 100%;
 }
-/* line 289, ../sass/app.scss */
+/* line 290, ../sass/app.scss */
 div.card_pane div.card_content > ul.brief-news > li {
   margin: 9px 0px;
   padding-bottom: 9px;
@@ -359,14 +360,14 @@ div.card_pane div.card_content > ul.brief-news > li {
   white-space: nowrap;
   position: relative;
 }
-/* line 296, ../sass/app.scss */
+/* line 297, ../sass/app.scss */
 div.card_pane div.card_content > ul.brief-news > li > a {
   font-size: 1.2em;
   padding-left: 12px;
   color: #8d8d8d;
   font-weight: normal;
 }
-/* line 303, ../sass/app.scss */
+/* line 304, ../sass/app.scss */
 div.card_pane div.card_content > ul.brief-news > li span.upload_dt {
   position: absolute;
   right: 0px;
@@ -376,7 +377,7 @@ div.card_pane div.card_content > ul.brief-news > li span.upload_dt {
   background: #fff;
   color: #8d8d8d;
 }
-/* line 312, ../sass/app.scss */
+/* line 313, ../sass/app.scss */
 div.card_pane div.card_content > ul.brief-news > li:before {
   content: "\f0c8";
   color: #8a8a8a;
@@ -390,13 +391,69 @@ div.card_pane div.card_content > ul.brief-news > li:before {
   -moz-osx-font-smoothing: grayscale;
   line-height: 0.1em;
 }
-/* line 326, ../sass/app.scss */
+/* line 327, ../sass/app.scss */
 div.card_pane div.card_content > ul.brief-news > li:hover:before {
-  content: "\f064";
-  font-size: 0.9em;
   color: #fc9907;
 }
-/* line 334, ../sass/app.scss */
+/* line 332, ../sass/app.scss */
 div.card_pane div.card_content > ul.brief-news > li:nth-last-child(1) {
   border-bottom: none;
+}
+/* line 337, ../sass/app.scss */
+div.card_pane div.card_content > ul.case-sample {
+  height: 490px;
+}
+/* line 339, ../sass/app.scss */
+div.card_pane div.card_content > ul.case-sample li {
+  width: 5.1em;
+  height: 7em;
+}
+
+/* line 347, ../sass/app.scss */
+div.case_pane {
+  height: 490px;
+}
+/* line 350, ../sass/app.scss */
+div.case_pane div.card_content > ul.case-sample {
+  padding: 0.09em 0.02em;
+}
+/* line 352, ../sass/app.scss */
+div.case_pane div.card_content > ul.case-sample li {
+  text-align: center;
+  vertical-align: text-top;
+  display: inline-block;
+  /* non-flexbox browsers */
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 18.12em;
+  height: 17em;
+  margin: 0.2em;
+  overflow: hidden;
+}
+/* line 360, ../sass/app.scss */
+div.case_pane div.card_content > ul.case-sample li a {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  display: block;
+  background: #ddd;
+}
+/* line 371, ../sass/app.scss */
+div.case_pane div.card_content > ul.case-sample li:hover {
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -moz-transform: perspective(300) rotateY(180deg);
+  -webkit-transform: perspective(300) rotateY(180deg);
+  transform: perspective(300) rotateY(180deg);
+}
+
+/* line 380, ../sass/app.scss */
+div.footer {
+  height: 500px;
 }
