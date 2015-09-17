@@ -62,19 +62,21 @@ div.h-b-2 div.lf {
 }
 /* line 51, ../sass/app.scss */
 div.h-b-2 div.rt {
-  width: 800px;
+  margin-left: -100%;
+  padding-left: 300px;
+  width: 100%;
   float: right;
   margin-right: -2px;
   height: 157px;
   text-align: center;
   position: relative;
 }
-/* line 58, ../sass/app.scss */
+/* line 60, ../sass/app.scss */
 div.h-b-2 div.rt ul.menus {
   padding: 0;
   margin-top: 35px;
 }
-/* line 62, ../sass/app.scss */
+/* line 64, ../sass/app.scss */
 div.h-b-2 div.rt ul.menus li {
   background: rgba(255, 255, 255, 0);
   width: 8em;
@@ -91,7 +93,7 @@ div.h-b-2 div.rt ul.menus li {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 77, ../sass/app.scss */
+/* line 79, ../sass/app.scss */
 div.h-b-2 div.rt ul.menus li a {
   font-size: 1.3em;
   color: #5699bc;
@@ -99,11 +101,11 @@ div.h-b-2 div.rt ul.menus li a {
   letter-spacing: 0.02em;
 }
 
-/* line 87, ../sass/app.scss */
+/* line 89, ../sass/app.scss */
 .h-b-3 {
   height: 439px;
 }
-/* line 89, ../sass/app.scss */
+/* line 91, ../sass/app.scss */
 .h-b-3 .bx-wrapper {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -111,18 +113,112 @@ div.h-b-2 div.rt ul.menus li a {
   border: 0px;
   margin-bottom: 0px;
 }
-/* line 93, ../sass/app.scss */
+/* line 95, ../sass/app.scss */
 .h-b-3 .bx-wrapper .bx-default-pager {
   position: relative;
   top: -35px;
   margin-top: 0px;
   padding: 0px;
 }
-/* line 98, ../sass/app.scss */
+/* line 100, ../sass/app.scss */
 .h-b-3 .bx-wrapper .bx-default-pager .bx-pager-link {
-  width: 20px;
-  height: 20px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  width: 18px;
+  height: 18px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+
+/* line 110, ../sass/app.scss */
+div.card_pane {
+  height: 372px;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  margin: 21px 0px;
+}
+/* line 115, ../sass/app.scss */
+div.card_pane > .card_pane_title {
+  height: 56px;
+  background: #f3f3f3;
+  border-bottom: 1px solid #d8d8d8;
+  position: relative;
+}
+/* line 120, ../sass/app.scss */
+div.card_pane > .card_pane_title > a {
+  font-size: 1.2em;
+  height: 56px;
+  line-height: 56px;
+  position: absolute;
+  right: 6px;
+  color: #a3a3a3;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 127, ../sass/app.scss */
+div.card_pane > .card_pane_title > a i {
+  font-size: 1.5em;
+  color: #8f8f8f;
+  margin-left: 8px;
+  position: relative;
+  top: 2px;
+}
+/* line 138, ../sass/app.scss */
+div.card_pane .products {
+  background: #f3f3f3 url(../images/products_card_title.png) center left no-repeat;
+}
+/* line 142, ../sass/app.scss */
+div.card_pane .joinus {
+  background: #f3f3f3 url(../images/join_us_title.png) center left no-repeat;
+}
+/* line 145, ../sass/app.scss */
+div.card_pane .news1 {
+  background: #f3f3f3 url(../images/news1_card_title.png) center left no-repeat;
+}
+/* line 148, ../sass/app.scss */
+div.card_pane .news2 {
+  background: #f3f3f3 url(../images/news2_card_title.png) center left no-repeat;
+}
+/* line 151, ../sass/app.scss */
+div.card_pane .kt {
+  background: #f3f3f3 url(../images/mud_kt.png) center left no-repeat;
+}
+/* line 154, ../sass/app.scss */
+div.card_pane .case {
+  background: #f3f3f3 url(../images/case_pane_title.png) center left no-repeat;
+}
+/* line 157, ../sass/app.scss */
+div.card_pane div.card_content {
+  padding: 4px;
+}
+/* line 159, ../sass/app.scss */
+div.card_pane div.card_content ul {
+  list-style: none;
+  margin: 0px;
+  padding: 5px;
+}
+/* line 163, ../sass/app.scss */
+div.card_pane div.card_content ul li {
+  width: 29.1em;
+  margin: .5em;
+  height: 7em;
+  text-align: center;
+  vertical-align: text-top;
+  display: inline-block;
+  /* non-flexbox browsers */
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 173, ../sass/app.scss */
+div.card_pane div.card_content ul li a {
+  padding: 0px;
+  margin: 0px;
+  width: 29.1em;
+}
+/* line 177, ../sass/app.scss */
+div.card_pane div.card_content ul li a > img {
+  width: 29em;
 }
