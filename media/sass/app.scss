@@ -1,5 +1,7 @@
-@CHARSET "UTF-8";
 @import "compass/css3";
+@import "compass/typography";
+$link-color: #5699bc;
+$link-hover-color: #f4b55b;
 html, body{
 	font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
 	min-width:1200px;
@@ -14,6 +16,33 @@ div.container-ld{
 
 div.container, div.row{
 	width:1170px;
+}
+
+.animation{
+	@include transition-property(all);
+	@include transition-duration(0.2s);
+	@include transition-timing-function(ease-in);
+}
+
+.transform{
+	@include box-shadow(0 15px 30px rgba(0,0,0,0.1));
+	@include transform(translate3d(0, -3px, 0));	
+}
+
+.common-link{
+	font-size:1.3em;
+  	color:$link-color;
+  	font-weight:600;
+  	letter-spacing:0.02em;
+  	@extend .animation;
+	&:hover{
+		color:$link-hover-color;
+  		text-decoration:none;
+  		*{
+  			color:$link-hover-color;
+  			@extend .animation;
+  		}
+	}
 }
 
 div.h-b-1{
@@ -36,6 +65,7 @@ div.h-b-1{
 		float:right;
 	}
 }
+
 
 div.h-b-2{
 	min-width:1200px;
@@ -81,10 +111,12 @@ div.h-b-2{
 		  -webkit-justify-content: center;
 		  justify-content: center;
 		  a{
-		  	font-size:1.3em;
-		  	color:#5699bc;
-		  	font-weight:600;
-		  	letter-spacing:0.02em;
+		  	padding:0px 5px;
+		  	@extend .common-link;
+		  	&:hover{
+		  		@extend .transform;
+		  		@include transform(translate3d(0, -2px, 0));	
+		  	}
 		  }
 		}
 	}
@@ -122,6 +154,7 @@ div.card_pane{
 		border-bottom:1px solid #d8d8d8;
 		position:relative;
 		> a{
+			@extend .common-link;
 			font-size:1.2em;
 			height:56px;
 			line-height:56px;
@@ -137,6 +170,7 @@ div.card_pane{
 			}
 			text-decoration: none;
 			cursor:pointer;
+			
 		}
 	}
 	.products{
@@ -159,14 +193,13 @@ div.card_pane{
 	}
 	div.card_content{
 		padding:4px;
-		ul{
+		height:100%;
+		> ul.products-sample{
 			list-style:none;
 			margin:0px;	
 			padding:5px;
 			li{
-				@include transition-property(all);
-				@include transition-duration(0.08s);
-				@include transition-timing-function(ease-in);
+				@extend .animation;
 			    width: 29.1em;
 			    margin: .5em;
 			    height: 7em;
@@ -184,12 +217,39 @@ div.card_pane{
 			    		width:29em;
 			    	}
 			    }
+			    &:hover{
+			    	@extend .transform;
+			    }
 			}
-			li:hover{
-				-webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-				box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-				-webkit-transform: translate3d(0, -2px, 0);
-				transform: translate3d(0, -2px, 0);
+		};
+		> ul.join-us{
+			@extend ul.products-sample;
+			display:block;
+			width:100%;
+			height:100%;
+			position:relative;
+			li{
+				display:block;
+				overflow:hidden;
+				width:100%;
+				height:50%;
+				&:hover{
+					@include box-shadow(none);	
+					@include transform(none);
+				}
+				> button.btn-ld{
+					@extend .animation;
+					background:#fd9807;
+					width:100%;
+					height:3.5em;
+					margin-top:22px;
+					color:#fff;
+					font-size:18px;
+					&:hover{
+						@extend .transform;
+						@include box-shadow(0 8px 5px rgba(0,0,0,0.1));
+					}
+				}
 			}
 		}
 	}

@@ -1,27 +1,70 @@
 @charset "UTF-8";
-@CHARSET "UTF-8";
-/* line 3, ../sass/app.scss */
+/* line 5, ../sass/app.scss */
 html, body {
   font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"瀹嬩綋";
   min-width: 1200px;
 }
 
-/* line 7, ../sass/app.scss */
+/* line 9, ../sass/app.scss */
 body, label, input, td, div, select, a {
   font-size: 12px;
 }
 
-/* line 11, ../sass/app.scss */
+/* line 13, ../sass/app.scss */
 div.container-ld {
   width: 1200px;
 }
 
-/* line 15, ../sass/app.scss */
+/* line 17, ../sass/app.scss */
 div.container, div.row {
   width: 1170px;
 }
 
-/* line 19, ../sass/app.scss */
+/* line 21, ../sass/app.scss */
+.animation, .common-link, div.h-b-2 div.rt ul.menus li a, div.card_pane > .card_pane_title > a, .common-link:hover *, div.h-b-2 div.rt ul.menus li a:hover *, div.card_pane > .card_pane_title > a:hover *, div.card_pane div.card_content > ul.products-sample li, div.card_pane div.card_content > ul.join-us li, div.card_pane div.card_content > ul.join-us li > button.btn-ld {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 27, ../sass/app.scss */
+.transform, div.h-b-2 div.rt ul.menus li a:hover, div.card_pane div.card_content > ul.products-sample li:hover, div.card_pane div.card_content > ul.join-us li:hover, div.card_pane div.card_content > ul.join-us li > button.btn-ld:hover {
+  -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -moz-transform: translate3d(0, -3px, 0);
+  -ms-transform: translate3d(0, -3px, 0);
+  -webkit-transform: translate3d(0, -3px, 0);
+  transform: translate3d(0, -3px, 0);
+}
+
+/* line 32, ../sass/app.scss */
+.common-link, div.h-b-2 div.rt ul.menus li a, div.card_pane > .card_pane_title > a {
+  font-size: 1.3em;
+  color: #5699bc;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+/* line 38, ../sass/app.scss */
+.common-link:hover, div.h-b-2 div.rt ul.menus li a:hover, div.card_pane > .card_pane_title > a:hover {
+  color: #f4b55b;
+  text-decoration: none;
+}
+/* line 41, ../sass/app.scss */
+.common-link:hover *, div.h-b-2 div.rt ul.menus li a:hover *, div.card_pane > .card_pane_title > a:hover * {
+  color: #f4b55b;
+}
+
+/* line 48, ../sass/app.scss */
 div.h-b-1 {
   min-width: 1200px;
   height: 33px;
@@ -29,23 +72,23 @@ div.h-b-1 {
   background: #e3e3e3;
   color: #1f77a3;
 }
-/* line 25, ../sass/app.scss */
+/* line 54, ../sass/app.scss */
 div.h-b-1 label.lf, div.h-b-1 label.rt {
   font-size: 1.2em;
   letter-spacing: 0.01em;
 }
-/* line 29, ../sass/app.scss */
+/* line 58, ../sass/app.scss */
 div.h-b-1 label.lf {
   color: #1f77a3;
   float: left;
 }
-/* line 34, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 div.h-b-1 label.rt {
   color: #f4b55b;
   float: right;
 }
 
-/* line 40, ../sass/app.scss */
+/* line 70, ../sass/app.scss */
 div.h-b-2 {
   min-width: 1200px;
   height: 157px;
@@ -53,11 +96,11 @@ div.h-b-2 {
   background: #fff;
   color: #1f77a3;
 }
-/* line 46, ../sass/app.scss */
+/* line 76, ../sass/app.scss */
 div.h-b-2 .row {
   position: relative;
 }
-/* line 49, ../sass/app.scss */
+/* line 79, ../sass/app.scss */
 div.h-b-2 div.lf {
   width: 300px;
   position: absolute;
@@ -65,7 +108,7 @@ div.h-b-2 div.lf {
   background: url(../images/logo.png) center center no-repeat;
   height: 157px;
 }
-/* line 56, ../sass/app.scss */
+/* line 86, ../sass/app.scss */
 div.h-b-2 div.rt {
   padding-left: 300px;
   width: 100%;
@@ -75,12 +118,12 @@ div.h-b-2 div.rt {
   text-align: center;
   position: relative;
 }
-/* line 64, ../sass/app.scss */
+/* line 94, ../sass/app.scss */
 div.h-b-2 div.rt ul.menus {
   padding: 0;
   margin-top: 35px;
 }
-/* line 68, ../sass/app.scss */
+/* line 98, ../sass/app.scss */
 div.h-b-2 div.rt ul.menus li {
   background: rgba(255, 255, 255, 0);
   width: 8em;
@@ -97,19 +140,23 @@ div.h-b-2 div.rt ul.menus li {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 83, ../sass/app.scss */
+/* line 113, ../sass/app.scss */
 div.h-b-2 div.rt ul.menus li a {
-  font-size: 1.3em;
-  color: #5699bc;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  padding: 0px 5px;
+}
+/* line 116, ../sass/app.scss */
+div.h-b-2 div.rt ul.menus li a:hover {
+  -moz-transform: translate3d(0, -2px, 0);
+  -ms-transform: translate3d(0, -2px, 0);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
 }
 
-/* line 93, ../sass/app.scss */
+/* line 125, ../sass/app.scss */
 .h-b-3 {
   height: 439px;
 }
-/* line 95, ../sass/app.scss */
+/* line 127, ../sass/app.scss */
 .h-b-3 .bx-wrapper {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -117,14 +164,14 @@ div.h-b-2 div.rt ul.menus li a {
   border: 0px;
   margin-bottom: 0px;
 }
-/* line 99, ../sass/app.scss */
+/* line 131, ../sass/app.scss */
 .h-b-3 .bx-wrapper .bx-default-pager {
   position: relative;
   top: -35px;
   margin-top: 0px;
   padding: 0px;
 }
-/* line 104, ../sass/app.scss */
+/* line 136, ../sass/app.scss */
 .h-b-3 .bx-wrapper .bx-default-pager .bx-pager-link {
   width: 18px;
   height: 18px;
@@ -133,21 +180,21 @@ div.h-b-2 div.rt ul.menus li a {
   border-radius: 9px;
 }
 
-/* line 114, ../sass/app.scss */
+/* line 146, ../sass/app.scss */
 div.card_pane {
   height: 372px;
   width: 100%;
   border: 1px solid #d8d8d8;
   margin: 21px 0px;
 }
-/* line 119, ../sass/app.scss */
+/* line 151, ../sass/app.scss */
 div.card_pane > .card_pane_title {
   height: 56px;
   background: #f3f3f3;
   border-bottom: 1px solid #d8d8d8;
   position: relative;
 }
-/* line 124, ../sass/app.scss */
+/* line 156, ../sass/app.scss */
 div.card_pane > .card_pane_title > a {
   font-size: 1.2em;
   height: 56px;
@@ -158,7 +205,7 @@ div.card_pane > .card_pane_title > a {
   text-decoration: none;
   cursor: pointer;
 }
-/* line 131, ../sass/app.scss */
+/* line 164, ../sass/app.scss */
 div.card_pane > .card_pane_title > a i {
   font-size: 1.5em;
   color: #8f8f8f;
@@ -166,54 +213,43 @@ div.card_pane > .card_pane_title > a i {
   position: relative;
   top: 2px;
 }
-/* line 142, ../sass/app.scss */
+/* line 176, ../sass/app.scss */
 div.card_pane .products {
   background: #f3f3f3 url(../images/products_card_title.png) center left no-repeat;
 }
-/* line 145, ../sass/app.scss */
+/* line 179, ../sass/app.scss */
 div.card_pane .joinus {
   background: #f3f3f3 url(../images/join_us_title.png) center left no-repeat;
 }
-/* line 148, ../sass/app.scss */
+/* line 182, ../sass/app.scss */
 div.card_pane .news1 {
   background: #f3f3f3 url(../images/news1_card_title.png) center left no-repeat;
 }
-/* line 151, ../sass/app.scss */
+/* line 185, ../sass/app.scss */
 div.card_pane .news2 {
   background: #f3f3f3 url(../images/news2_card_title.png) center left no-repeat;
 }
-/* line 154, ../sass/app.scss */
+/* line 188, ../sass/app.scss */
 div.card_pane .kt {
   background: #f3f3f3 url(../images/mud_kt.png) center left no-repeat;
 }
-/* line 157, ../sass/app.scss */
+/* line 191, ../sass/app.scss */
 div.card_pane .case {
   background: #f3f3f3 url(../images/case_pane_title.png) center left no-repeat;
 }
-/* line 160, ../sass/app.scss */
+/* line 194, ../sass/app.scss */
 div.card_pane div.card_content {
   padding: 4px;
+  height: 100%;
 }
-/* line 162, ../sass/app.scss */
-div.card_pane div.card_content ul {
+/* line 197, ../sass/app.scss */
+div.card_pane div.card_content > ul.products-sample, div.card_pane div.card_content > ul.join-us {
   list-style: none;
   margin: 0px;
   padding: 5px;
 }
-/* line 166, ../sass/app.scss */
-div.card_pane div.card_content ul li {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.08s;
-  -o-transition-duration: 0.08s;
-  -webkit-transition-duration: 0.08s;
-  transition-duration: 0.08s;
-  -moz-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
+/* line 201, ../sass/app.scss */
+div.card_pane div.card_content > ul.products-sample li, div.card_pane div.card_content > ul.join-us li {
   width: 29.1em;
   margin: .5em;
   height: 7em;
@@ -228,20 +264,52 @@ div.card_pane div.card_content ul li {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 179, ../sass/app.scss */
-div.card_pane div.card_content ul li a {
+/* line 212, ../sass/app.scss */
+div.card_pane div.card_content > ul.products-sample li a, div.card_pane div.card_content > ul.join-us li a {
   padding: 0px;
   margin: 0px;
   width: 29.1em;
 }
-/* line 183, ../sass/app.scss */
-div.card_pane div.card_content ul li a > img {
+/* line 216, ../sass/app.scss */
+div.card_pane div.card_content > ul.products-sample li a > img, div.card_pane div.card_content > ul.join-us li a > img {
   width: 29em;
 }
-/* line 188, ../sass/app.scss */
-div.card_pane div.card_content ul li:hover {
-  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  -webkit-transform: translate3d(0, -2px, 0);
-  transform: translate3d(0, -2px, 0);
+/* line 225, ../sass/app.scss */
+div.card_pane div.card_content > ul.join-us {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 231, ../sass/app.scss */
+div.card_pane div.card_content > ul.join-us li {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+}
+/* line 236, ../sass/app.scss */
+div.card_pane div.card_content > ul.join-us li:hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+/* line 240, ../sass/app.scss */
+div.card_pane div.card_content > ul.join-us li > button.btn-ld {
+  background: #fd9807;
+  width: 100%;
+  height: 3.5em;
+  margin-top: 22px;
+  color: #fff;
+  font-size: 18px;
+}
+/* line 248, ../sass/app.scss */
+div.card_pane div.card_content > ul.join-us li > button.btn-ld:hover {
+  -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
 }
