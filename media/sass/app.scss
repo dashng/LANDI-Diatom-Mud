@@ -6,6 +6,7 @@ html, body{
 }
 body, label, input, td, div, select, a{
 	font-size:12px;
+	
 }
 div.container-ld{
 	width:1200px;
@@ -137,7 +138,6 @@ div.card_pane{
 	}
 	.products{
 		background: #f3f3f3 url(../images/products_card_title.png) center left no-repeat;
-		
 	}
 	.joinus{
 		background: #f3f3f3 url(../images/join_us_title.png) center left no-repeat;
@@ -161,6 +161,9 @@ div.card_pane{
 			margin:0px;	
 			padding:5px;
 			li{
+				@include transition-property(all);
+				@include transition-duration(0.08s);
+				@include transition-timing-function(ease-in);
 			    width: 29.1em;
 			    margin: .5em;
 			    height: 7em;
@@ -178,6 +181,12 @@ div.card_pane{
 			    		width:29em;
 			    	}
 			    }
+			}
+			li:hover{
+				-webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+				box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+				-webkit-transform: translate3d(0, -2px, 0);
+				transform: translate3d(0, -2px, 0);
 			}
 		}
 	}

@@ -11,17 +11,17 @@ body, label, input, td, div, select, a {
   font-size: 12px;
 }
 
-/* line 10, ../sass/app.scss */
+/* line 11, ../sass/app.scss */
 div.container-ld {
   width: 1200px;
 }
 
-/* line 14, ../sass/app.scss */
+/* line 15, ../sass/app.scss */
 div.container, div.row {
   width: 1170px;
 }
 
-/* line 18, ../sass/app.scss */
+/* line 19, ../sass/app.scss */
 div.h-b-1 {
   min-width: 1200px;
   height: 33px;
@@ -29,23 +29,23 @@ div.h-b-1 {
   background: #e3e3e3;
   color: #1f77a3;
 }
-/* line 24, ../sass/app.scss */
+/* line 25, ../sass/app.scss */
 div.h-b-1 label.lf, div.h-b-1 label.rt {
   font-size: 1.2em;
   letter-spacing: 0.01em;
 }
-/* line 28, ../sass/app.scss */
+/* line 29, ../sass/app.scss */
 div.h-b-1 label.lf {
   color: #1f77a3;
   float: left;
 }
-/* line 33, ../sass/app.scss */
+/* line 34, ../sass/app.scss */
 div.h-b-1 label.rt {
   color: #f4b55b;
   float: right;
 }
 
-/* line 39, ../sass/app.scss */
+/* line 40, ../sass/app.scss */
 div.h-b-2 {
   min-width: 1200px;
   height: 157px;
@@ -53,14 +53,14 @@ div.h-b-2 {
   background: #fff;
   color: #1f77a3;
 }
-/* line 45, ../sass/app.scss */
+/* line 46, ../sass/app.scss */
 div.h-b-2 div.lf {
   width: 300px;
   float: left;
   background: url(../images/logo.png) center center no-repeat;
   height: 157px;
 }
-/* line 51, ../sass/app.scss */
+/* line 52, ../sass/app.scss */
 div.h-b-2 div.rt {
   margin-left: -100%;
   padding-left: 300px;
@@ -71,12 +71,12 @@ div.h-b-2 div.rt {
   text-align: center;
   position: relative;
 }
-/* line 60, ../sass/app.scss */
+/* line 61, ../sass/app.scss */
 div.h-b-2 div.rt ul.menus {
   padding: 0;
   margin-top: 35px;
 }
-/* line 64, ../sass/app.scss */
+/* line 65, ../sass/app.scss */
 div.h-b-2 div.rt ul.menus li {
   background: rgba(255, 255, 255, 0);
   width: 8em;
@@ -93,7 +93,7 @@ div.h-b-2 div.rt ul.menus li {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 79, ../sass/app.scss */
+/* line 80, ../sass/app.scss */
 div.h-b-2 div.rt ul.menus li a {
   font-size: 1.3em;
   color: #5699bc;
@@ -101,11 +101,11 @@ div.h-b-2 div.rt ul.menus li a {
   letter-spacing: 0.02em;
 }
 
-/* line 89, ../sass/app.scss */
+/* line 90, ../sass/app.scss */
 .h-b-3 {
   height: 439px;
 }
-/* line 91, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 .h-b-3 .bx-wrapper {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -113,14 +113,14 @@ div.h-b-2 div.rt ul.menus li a {
   border: 0px;
   margin-bottom: 0px;
 }
-/* line 95, ../sass/app.scss */
+/* line 96, ../sass/app.scss */
 .h-b-3 .bx-wrapper .bx-default-pager {
   position: relative;
   top: -35px;
   margin-top: 0px;
   padding: 0px;
 }
-/* line 100, ../sass/app.scss */
+/* line 101, ../sass/app.scss */
 .h-b-3 .bx-wrapper .bx-default-pager .bx-pager-link {
   width: 18px;
   height: 18px;
@@ -129,21 +129,21 @@ div.h-b-2 div.rt ul.menus li a {
   border-radius: 9px;
 }
 
-/* line 110, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 div.card_pane {
   height: 372px;
   width: 100%;
   border: 1px solid #d8d8d8;
   margin: 21px 0px;
 }
-/* line 115, ../sass/app.scss */
+/* line 116, ../sass/app.scss */
 div.card_pane > .card_pane_title {
   height: 56px;
   background: #f3f3f3;
   border-bottom: 1px solid #d8d8d8;
   position: relative;
 }
-/* line 120, ../sass/app.scss */
+/* line 121, ../sass/app.scss */
 div.card_pane > .card_pane_title > a {
   font-size: 1.2em;
   height: 56px;
@@ -154,7 +154,7 @@ div.card_pane > .card_pane_title > a {
   text-decoration: none;
   cursor: pointer;
 }
-/* line 127, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 div.card_pane > .card_pane_title > a i {
   font-size: 1.5em;
   color: #8f8f8f;
@@ -162,7 +162,7 @@ div.card_pane > .card_pane_title > a i {
   position: relative;
   top: 2px;
 }
-/* line 138, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 div.card_pane .products {
   background: #f3f3f3 url(../images/products_card_title.png) center left no-repeat;
 }
@@ -198,6 +198,18 @@ div.card_pane div.card_content ul {
 }
 /* line 163, ../sass/app.scss */
 div.card_pane div.card_content ul li {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.08s;
+  -o-transition-duration: 0.08s;
+  -webkit-transition-duration: 0.08s;
+  transition-duration: 0.08s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
   width: 29.1em;
   margin: .5em;
   height: 7em;
@@ -212,13 +224,20 @@ div.card_pane div.card_content ul li {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 173, ../sass/app.scss */
+/* line 176, ../sass/app.scss */
 div.card_pane div.card_content ul li a {
   padding: 0px;
   margin: 0px;
   width: 29.1em;
 }
-/* line 177, ../sass/app.scss */
+/* line 180, ../sass/app.scss */
 div.card_pane div.card_content ul li a > img {
   width: 29em;
+}
+/* line 185, ../sass/app.scss */
+div.card_pane div.card_content ul li:hover {
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
 }
