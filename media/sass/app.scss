@@ -5,10 +5,10 @@ $link-hover-color: #f4b55b;
 html, body{
 	font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
 	min-width:1200px;
+	font-size:12px;
 }
 body, label, input, td, div, select, a{
-	font-size:12px;
-	
+	font-size:1em;
 }
 .btn {
 	display: inline-block;
@@ -144,7 +144,7 @@ div.h-b-2{
 }
 
 .h-b-3{
-	height:439px;
+	max-height:439px;
 	.bx-wrapper{
 		@include box-shadow(none);
 		border:0px;
@@ -169,6 +169,7 @@ div.card_pane{
 	width:100%;
 	border:1px solid #d8d8d8;
 	margin:21px 0px;
+	overflow:hidden;
 	> .card_pane_title{
 		height:56px;
 		background:#f3f3f3;
@@ -276,6 +277,62 @@ div.card_pane{
 						background:#ffd842;
 					}
 				}
+			}
+		};
+		
+		> ul.brief-news{
+			padding:15px 5px;
+			list-style-type:none;
+			margin:5px;
+			overflow:hidden;
+			max-height:100%;
+			> li{
+				margin:9px 0px;
+				padding-bottom:9px;
+				border-bottom:1px dashed #8a8a8a;
+				overflow:hidden;
+				white-space:nowrap;
+				position:relative;
+				>a{
+					@extend .common-link;
+					font-size:1.2em;
+					padding-left:12px;
+					color:#8d8d8d;
+					font-weight:normal;
+				}
+				span.upload_dt{
+					position:absolute;
+					right:0px;
+					bottom:9px;
+					padding:0px 15px;
+					padding-right:0px;
+					background:#fff;
+					color:#8d8d8d;
+				}
+				&:before{
+					content: "\f0c8";
+					color:#8a8a8a;
+					background:#fc9907;
+					width:0.5em;
+					display: inline-block;
+					font: normal normal normal 14px/1 FontAwesome;
+					font-size:0.5em;
+					text-rendering: auto;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					line-height:0.1em;
+				}
+				&:hover{
+					&:before{
+						content: "\f064";
+						font-size:0.9em;
+						color:#fc9907;
+						
+					}
+				}
+			}
+			> li:nth-last-child(1){
+				border-bottom:none;
 			}
 		}
 	}
