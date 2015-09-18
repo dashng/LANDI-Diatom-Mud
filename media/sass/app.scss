@@ -52,6 +52,24 @@ body, label, input, td, div, select, a{
 }
 div.container-ld{
 	width:1200px;
+	padding:15px 0px 15px 200px;
+	overflow:hidden;
+	position:relative;
+	div.left{
+		background: blue;
+		min-height:400px;
+		width:180px;
+		float:left;
+		margin-left:-100%;
+		position:relative;
+		right:16.5em;
+	}
+	div.center{
+		width:100%;
+		background:#ddd;
+		min-height:700px;
+		float:left;
+	}
 }
 
 div.container, div.row{
