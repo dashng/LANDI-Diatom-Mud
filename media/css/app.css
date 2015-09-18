@@ -437,7 +437,7 @@ div.case_pane div.card_content > ul.case-sample li {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-  width: 18.12em;
+  width: 18.13em;
   height: 17em;
   margin: 0.2em;
   overflow: hidden;
@@ -452,16 +452,40 @@ div.case_pane div.card_content > ul.case-sample li a {
 }
 /* line 379, ../sass/app.scss */
 div.case_pane div.card_content > ul.case-sample li:hover {
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  -moz-transform: perspective(300) rotateY(180deg);
-  -webkit-transform: perspective(300) rotateY(180deg);
-  transform: perspective(300) rotateY(180deg);
+  -moz-transform: perspective(0) rotateY(180deg) rotateY(180deg);
+  -webkit-transform: perspective(0) rotateY(180deg) rotateY(180deg);
+  transform: perspective(0) rotateY(180deg) rotateY(180deg);
 }
 
-/* line 388, ../sass/app.scss */
+/* line 387, ../sass/app.scss */
 div.footer {
-  height: 500px;
+  height: 450px;
+}
+/* line 391, ../sass/app.scss */
+div.footer .container .footer-list-container {
+  width: 880px;
+  height: 139px;
+  margin: 0px auto;
+  position: relative;
+}
+/* line 396, ../sass/app.scss */
+div.footer .container .footer-list-container > div {
+  width: 16%;
+  border-left: 1px solid #8c8c8c;
+  float: left;
+  height: 120px;
+  margin-top: 80px;
+}
+/* line 402, ../sass/app.scss */
+div.footer .container .footer-list-container > div ul {
+  list-style: none;
+}
+/* line 404, ../sass/app.scss */
+div.footer .container .footer-list-container > div ul li a {
+  color: #8c8c8c;
+}
+/* line 408, ../sass/app.scss */
+div.footer .container .footer-list-container > div ul li:nth-child(1) {
+  font-size: 14px;
+  font-weight: bold;
 }

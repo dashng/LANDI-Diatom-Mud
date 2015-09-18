@@ -372,13 +372,12 @@ div.case_pane{
 			    	display:block;
 			    	background:#ddd;
 			    }
-			    width: 18.12em;
+			    width: 18.13em;
 			    height:17em;
 			    margin: 0.2em;
 			    overflow:hidden;
 			    &:hover{
-						@include transform(rotateY(180deg)); //No 3D fallback
-      					@include transform3d(perspective(300) rotateY(180deg)); 
+      					@include transform3d(perspective(0) rotateY(180deg) rotateY(180deg));
 			    }
 			}	
 		}
@@ -387,9 +386,33 @@ div.case_pane{
 
 div.footer{
 	@extend .h-b-1;
-	height:500px;
+	height:450px;
 	.container{
-		
+		.footer-list-container{
+			width:880px;
+			height:139px;
+			margin:0px auto;
+			position:relative;
+			> div{
+				width:16%;
+				border-left:1px solid #8c8c8c;
+				float:left;
+				height:120px;
+				margin-top:80px;
+				ul{
+					li{
+						a{
+							color:#8c8c8c;
+						}
+					}
+					li:nth-child(1){
+						font-size:14px;
+						font-weight:bold;
+					}
+					list-style:none;
+				}
+			}
+		}	
 	}
 }
 
