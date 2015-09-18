@@ -60,19 +60,41 @@ div.container-ld.columns{
 	overflow:hidden;
 	position:relative;
 	div.left{
-		background: blue;
 		min-height:400px;
 		width:180px;
 		float:left;
 		margin-left:-100%;
 		position:relative;
 		right:16.5em;
+		ul{
+			padding:5px;
+			list-style:none;
+			margin:0px;
+			width:100%;
+			li{
+				border:1px solid #d8d8d8;
+				height:48px;
+				line-height:48px;
+				margin:2px;
+				text-align:center;
+				font-size:16px;
+				a{
+					text-align:center;
+					width:100%;
+					text-decoration:none;
+				}
+			}
+		}
 	}
 	div.center{
 		width:100%;
-		background:#ddd;
 		min-height:700px;
 		float:left;
+		div.article{
+			margin:5px;
+			border:1px solid #d8d8d8;
+			min-height:700px;
+		}
 	}
 }
 
