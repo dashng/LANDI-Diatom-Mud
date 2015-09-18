@@ -232,7 +232,12 @@
 	<script src="./media/bower_components/bxSlider/dist/jquery.bxslider.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			$('.bxslider').bxSlider({ auto: true});
+			$('.bxslider').bxSlider({
+				auto: true,
+				onSliderLoad: function(){
+					$('html, body').addClass('op-show');
+				}
+			});
 		});
 	</script>
 
