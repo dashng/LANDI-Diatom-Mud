@@ -2,6 +2,7 @@
 @import "compass/typography";
 $link-color: #5699bc;
 $link-hover-color: #f4b55b;
+$font-color:#747474;
 
 .animation{
 	@include transition-property(all);
@@ -71,7 +72,15 @@ div.container-ld.columns{
 			list-style:none;
 			margin:0px;
 			width:100%;
+			li.active{
+				background:#016498;
+				a{
+					color:#fff;
+				}
+				
+			}
 			li{
+				@extend .animation;
 				border:1px solid #d8d8d8;
 				height:48px;
 				line-height:48px;
@@ -82,6 +91,21 @@ div.container-ld.columns{
 					text-align:center;
 					width:100%;
 					text-decoration:none;
+				}
+				&:hover{
+					background:#e5eff4;
+					a{
+						color:$link-hover-color;
+						&:after{
+							content: "\f0da";
+							font-size: 28px;
+							vertical-align: -5px;
+							font: normal normal normal 14px/1 FontAwesome;
+							top:-5px;
+							left:12px;
+							position:relative;
+						}
+					}
 				}
 			}
 		}
@@ -94,6 +118,26 @@ div.container-ld.columns{
 			margin:5px;
 			border:1px solid #d8d8d8;
 			min-height:700px;
+			padding:12px 0px;
+			div.title{
+				padding:0px 24px;	
+				border-bottom:1px solid #d8d8d8;
+				h6{
+					font-size:1.6em;
+					color:$font-color;
+				}
+			}
+			div.content{
+				padding:12px 24px;
+				font-size:14px;
+				color:$font-color;
+				p{
+					margin:12px 0px;
+					line-height:40px;
+					letter-spacing:0.15em;
+				}
+			}
+			
 		}
 	}
 }
