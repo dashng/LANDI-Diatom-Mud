@@ -420,8 +420,8 @@ div.card_pane div.card_content > ul.products-sample, div.card_pane div.card_cont
 }
 /* line 353, ../sass/app.scss */
 div.card_pane div.card_content > ul.products-sample li, div.card_pane div.card_content > ul.join-us li {
-  width: 29.1em;
-  margin: .5em;
+  width: 29.2em;
+  overflow: hidden;
   height: 7em;
   text-align: center;
   vertical-align: text-top;
